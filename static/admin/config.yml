@@ -18,9 +18,9 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: "Post Type", name: "post_type", widget: "select", options: ["Case Study", "Visual Design", "Personal Project"]}
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Thumbnail', name: 'featuredimage', widget: 'image', allow_multiple: false, required: false }
       - { label: 'Thumbnail Alt', name: 'featuredimage_alt', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: "Post Type", name: "post_type", widget: "select", options: ["Case Studies", "Visual Design", "Personal Projects"]}
