@@ -4,8 +4,10 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Img from "gatsby-image"
 
-const BlogIndex = ({ data, location }) => {
+
+const WorkIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
@@ -15,7 +17,7 @@ const BlogIndex = ({ data, location }) => {
         <SEO title="Work" />
         <Bio />
         <p>
-          No blog posts found.
+          No posts found.
         </p>
       </Layout>
     )
@@ -27,6 +29,8 @@ const BlogIndex = ({ data, location }) => {
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
+          let featuredimage = post.frontmatter.featuredimage
+          featuredimage = featuredimage ? <Img fluid={featuredimage.src.childImageSharp.fluid} alt={featuredimage.alt}/> : ""
 
           return (
             <li key={post.fields.slug}>
@@ -41,9 +45,9 @@ const BlogIndex = ({ data, location }) => {
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
                 </header>
                 <section>
+                  {featuredimage}
                   <p
                     dangerouslySetInnerHTML={{
                       __html: post.frontmatter.description || post.excerpt,
@@ -60,7 +64,7 @@ const BlogIndex = ({ data, location }) => {
   )
 }
 
-export default BlogIndex
+export default WorkIndex
 
 export const pageQuery = graphql`
   query {
@@ -79,6 +83,18 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          featuredimage {
+            src {
+              relativePath
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 1024) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            alt
+          }
         }
       }
     }
