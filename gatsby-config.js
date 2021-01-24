@@ -3,9 +3,9 @@ module.exports = {
     title: `Josh Braun`,
     author: {
       name: `Josh Braun`,
-      summary: `I'm a designers`,
+      summary: `Hello! I’m Josh.I’m a product designer and developer based in NYC.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Hello! I’m Josh.I’m a product designer and developer based in NYC.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
     social: {
       twitter: `iamjoshbraun`,
