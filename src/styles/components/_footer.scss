@@ -1,0 +1,51 @@
+@use '../foundation/colors';
+@use '../foundation/fonts';
+
+footer {
+  max-width: 940px;
+  padding-top: 24px;
+  margin: 24px auto 0;
+  display: flex;
+  width: 100%;
+  border-top: 1px solid colors.$light-gray;
+  justify-content: space-between;
+}
+.social_links {
+  display: flex;
+  margin-bottom: 24px;
+}
+.social_links a {
+  margin: 0 12px 0 0;
+  padding: 6px;
+  background: colors.$white;
+  font-size: 14px;
+  border: none;
+}
+.social_links img {
+  width: 20px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+.social_links a:hover,
+.social_links a:focus,
+.social_links a:active {
+  opacity: 0.5;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+#copyright p{font-size: 12px; text-align:right; color: colors.$med-gray;}
+
+@media all and (max-width: 940px) {
+      footer {
+        padding: 24px 24px 0;
+        box-sizing: border-box;
+      }
+    }
+    @media all and (max-width: 640px) {
+      footer {display:block; padding-bottom: 24px;}
+      .social_links {margin-bottom:12px;}
+      #copyright p{font-size: 12px; text-align:left; color: colors.$med-gray;}
+    }

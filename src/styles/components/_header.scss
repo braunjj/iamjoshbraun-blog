@@ -1,0 +1,43 @@
+@use '../foundation/colors';
+@use '../foundation/fonts';
+
+.header#main {
+  max-width: 940px;
+  height: 72px;
+  display: flex;
+  margin: 0 auto;
+  border-bottom: 1px solid colors.$light-gray;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header#main #logo img {
+  max-height: 32px;
+  transition: 0.3s all ease;
+}
+
+.header#main #logo:hover img {
+  opacity: 0.7;
+}
+
+.header#main nav a {
+  color: colors.$med-gray;
+  font-weight: normal;
+  padding: 0 6px;
+  text-decoration: none;
+}
+
+.header#main nav a:hover {
+  color: colors.$black;
+}
+
+.header#main nav a.active {
+  color: colors.$black;
+  font-weight: 600;
+}
+
+@media all and (max-width: 986px) {
+  .header#main {
+    padding: 0 24px;
+  }
+}

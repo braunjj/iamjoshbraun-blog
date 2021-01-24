@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 export default class Home extends Component {
-  constructor(props){
-    super(props);
-  }
 
   render() {
     return (
-      <div pageTitle="Contact – Josh Braun">
+      <Layout location="contact" title="Josh Braun">
+      <SEO title="Contact" />
+
         <h1>Say Hello 👋🏻</h1>
         <p>Complete the form below or reach out via email at <a href="mailto:josh@iamjoshbraun.com">josh@iamjoshbraun.com</a>.</p>
 
@@ -25,7 +26,7 @@ export default class Home extends Component {
           <button id="send" tabindex="4" type="submit">Send</button>
         </p>
       </form>
-      </div>
+      </Layout>
       )
     }
 }

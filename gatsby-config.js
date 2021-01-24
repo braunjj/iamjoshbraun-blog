@@ -69,8 +69,18 @@ module.exports = {
         icon: `content/assets/gatsby-icon.png`,
       },
     },
+    {
+       resolve: `gatsby-plugin-google-fonts`,
+       options: {
+         fonts: [
+           `Poppins\:400,600,800`
+         ],
+         display: 'swap'
+       }
+     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
