@@ -22,4 +22,5 @@ collections:
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Thumbnail', name: 'featuredimage', widget: 'image', allow_multiple: false, required: false }
       - { label: 'Thumbnail Alt', name: 'featuredimage_alt', widget: 'string', required: false }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Body', name: 'body', widget: 'markdown' },
+      - { label: "Post Type", name: "type" widget: "select", options: { label: "Case Studies", value: "case_studies" },{ label: "Visual Design", value: "visual_design" }, { label: "Personal Projects", value: "personal_projects" } }
