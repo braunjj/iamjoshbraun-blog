@@ -2,9 +2,8 @@
 title: Hello World
 date: "2015-05-01T22:12:03.284Z"
 description: "Hello World"
-featuredimage:
-  src: "./salty_egg.jpg"
-  alt: "A salty egg"
+featuredimage: "./salty_egg.jpg"
+featuredimage_alt: ""
 ---
 
 This is my first post on my new fake blog! How exciting!

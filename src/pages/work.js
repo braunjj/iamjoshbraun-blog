@@ -30,7 +30,7 @@ const WorkIndex = ({ data, location }) => {
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
           let featuredimage = post.frontmatter.featuredimage
-          featuredimage = featuredimage ? <Img fluid={featuredimage.src.childImageSharp.fluid} alt={featuredimage.alt}/> : ""
+          featuredimage = featuredimage ? <Img fluid={featuredimage.childImageSharp.fluid} alt={post.frontmatter.featuredimage_alt}/> : ""
 
           return (
             <li key={post.fields.slug}>
@@ -80,21 +80,18 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
+          description
           date(formatString: "MMMM DD, YYYY")
           title
-          description
           featuredimage {
-            src {
-              relativePath
-              publicURL
-              childImageSharp {
-                fluid(maxWidth: 1024) {
+            publicURL
+            childImageSharp {
+              fluid(maxWidth: 1024){
                   ...GatsbyImageSharpFluid
                 }
-              }
             }
-            alt
           }
+          featuredimage_alt
         }
       }
     }
