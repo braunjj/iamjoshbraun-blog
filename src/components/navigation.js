@@ -10,7 +10,7 @@ export default class Navigation extends Component {
     return (
       <div className="header" id="main">
           <Link to="/" id="logo" title="Home">
-            <img src="../../assets/jb.svg"/>
+            <img src="/jb.svg"/>
           </Link>
           <nav>
             <Link to="/" id="home" title="Home" activeClassName="active">Home</Link>

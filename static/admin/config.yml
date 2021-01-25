@@ -24,8 +24,6 @@ collections:
       - { label: 'Thumbnail', name: 'featuredimage', widget: 'image', allow_multiple: false, required: false }
       - { label: 'Thumbnail Alt', name: 'featuredimage_alt', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-
-collections:
   - name: 'blog'
     label: 'Blog'
     folder: 'content/posts/blog'
