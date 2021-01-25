@@ -1,6 +1,6 @@
 ---
 title: Hello World Updated
-post_type: Case Study
+post_type: Blog
 date: 2021-01-24T17:30:22.729Z
 description: Hello World
 featuredimage: e0370b49-b908-4f6d-b59a-871b39161e2a.jpeg
