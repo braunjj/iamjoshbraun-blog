@@ -6,7 +6,7 @@ module.exports = {
       summary: `Hello! I’m Josh.I’m a product designer and developer based in NYC.`,
     },
     description: `Hello! I’m Josh.I’m a product designer and developer based in NYC.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    siteUrl: `https://iamjoshbraun.com/`,
     social: {
       twitter: `iamjoshbraun`,
     },
