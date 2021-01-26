@@ -10,11 +10,11 @@ const Layout = ({ location, title, children }) => {
   let header
 
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
+    <div className="" data-is-root-path={isRootPath}>
       <Navigation/>
 
       <header className="global-header">{header}</header>
-      <main>{children}</main>
+      <main className="app">{children}</main>
       <Footer/>
 
     </div>

@@ -13,7 +13,7 @@ const WorkIndex = ({ data, location }) => {
 
   if (posts.length === 0) {
     return (
-      <Layout location={location} title={siteTitle}>
+      <Layout location="{location}" title="Work">
         <SEO title="Work" />
         <Bio />
         <p>
@@ -24,8 +24,8 @@ const WorkIndex = ({ data, location }) => {
   }
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+    <Layout location="{location}" title={siteTitle}>
+      <SEO title="Work" />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
