@@ -3,10 +3,10 @@ module.exports = {
     title: `Josh Braun`,
     author: {
       name: `Josh Braun`,
-      summary: `Hello! I’m Josh.I’m a product designer and developer based in NYC.`,
+      summary: `Hello! I’m Josh. I’m a product designer and developer located in NYC.`,
     },
-    description: `Hello! I’m Josh.I’m a product designer and developer based in NYC.`,
-    siteUrl: `https://iamjoshbraun.com/`,
+    description: `I’m Josh – a product designer and developer located in NYC.`,
+    siteUrl: `https://iamjoshbraun.com`,
     social: {
       twitter: `iamjoshbraun`,
     },
@@ -73,7 +73,7 @@ module.exports = {
        resolve: `gatsby-plugin-google-fonts`,
        options: {
          fonts: [
-           `Poppins\:400,600,800`
+           `Poppins\:300,400,600,800`
          ],
          display: 'swap'
        }

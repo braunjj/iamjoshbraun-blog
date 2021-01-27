@@ -30,7 +30,7 @@ const WorkIndex = ({ data, location }) => {
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
           let featuredimage = post.frontmatter.featuredimage
-          featuredimage = featuredimage ? <Img fluid={featuredimage.childImageSharp.fluid} alt={post.frontmatter.featuredimage_alt}/> : ""
+          featuredimage = featuredimage ? <Img fluid={featuredimage.childImageSharp.fluid} fadeIn="false" alt={post.frontmatter.featuredimage_alt}/> : ""
 
           return (
             <li key={post.fields.slug}>

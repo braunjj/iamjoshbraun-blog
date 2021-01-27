@@ -22,7 +22,7 @@ export default class Home extends Component {
           <label>Email <input tabindex="2" type="email" name="email" placeholder="Johny Appleseed"/></label>
         </p>
         <p>
-          <label>Note <textarea tabindex="3" name="note" placeholder="What's up?"/></label>
+          <label>Note <textarea tabindex="3" rows="4" name="note" placeholder="What's up?"/></label>
         </p>
         <p>
           <button id="send" tabindex="4" type="submit">Send</button>

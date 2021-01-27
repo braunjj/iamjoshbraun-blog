@@ -1,11 +1,11 @@
 @use './foundation/colors';
-@use './foundation/fonts';
+@use './foundation/typography';
 @forward "./components/header";
 @forward "./components/footer";
 //@forward "./foundation/gatsby-starter";
 
 html {
-  font-family: fonts.$primary-font;
+  font-family: typography.$primary-font;
 }
 
 ::selection {
@@ -19,43 +19,6 @@ html {
   color: #000;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: normal;
-  margin: 4px 0 12px;
-}
-h1 {
-}
-h2 {
-  font-size: 24px;
-  line-height: 36px;
-  font-weight: 500;
-}
-
-p {
-  font-size: 16px;
-  line-height: 28px;
-  color: #555;
-  margin: 12px 0 4px;
-}
-
-label {
-  font-size: 14px;
-}
-
-a {
-  color: #cf3200;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-a:hover {
-  text-decoration: underline;
-}
 
 a.button,
 button {
@@ -134,9 +97,9 @@ textarea:hover {
 
 input:focus,
 textarea:focus {
-  border: 1px solid #999;
+  border: 1px solid #fff;
   background: #fff;
-  box-shadow: 0 0 0 2pt #ddd;
+  box-shadow: 0 0 0 2pt #ccc;
 }
 
 .divider {

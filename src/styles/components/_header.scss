@@ -1,5 +1,5 @@
 @use '../foundation/colors';
-@use '../foundation/fonts';
+@use '../foundation/typography';
 
 .header#main {
   max-width: 940px;
@@ -23,7 +23,7 @@
 .header#main nav a {
   color: colors.$med-gray;
   font-weight: normal;
-  padding: 0 6px;
+  padding: 0 8px;
   text-decoration: none;
 }
 

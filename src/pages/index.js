@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Layout from "../components/layout"
+import Image from "gatsby-image"
 
 import SEO from "../components/seo"
 
@@ -11,7 +12,7 @@ export default class Home extends Component {
       <SEO title="Home" />
       <div id="homepage_hero">
       <figure id="homepage_profile">
-        <img src="../assets/joshbraun.jpg" />
+        <img src="/img/joshbraun.jpg"/>
       </figure>
         <div id="hero_content">
           <h1>Howdy, I’m Josh – a product designer & developer located in NYC.</h1>

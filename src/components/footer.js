@@ -12,11 +12,11 @@ export default class Header extends Component {
     return (
         <footer>
           <div className="social_links">
-              <a title="Twitter" className="button" target="blank" href="https://twitter.com/iamjoshbraun"><img src="/img/social/twitter.svg"/></a>
-              <a title="Instagram" className="button" target="blank" href="https://www.instagram.com/iamjoshbraun/"><img src="/img/social/instagram.svg"/></a>
-              <a title="Linkedin" className="button" target="blank" href="https://www.linkedin.com/in/joshuajbraun/"><img src="/img/social/linkedin.svg"/></a>
-              <a title="Dribbble" className="button" target="blank" href="https://dribbble.com/iamjoshbraun"><img src="/img/social/dribbble.svg"/></a>
-              <a title="Messenger" className="button" target="blank" href="https://www.messenger.com/t/joshuajbraun"><img src="/img/social/messenger.svg"/></a>
+              <a title="Twitter" className="" target="blank" href="https://twitter.com/iamjoshbraun"><img src="/img/social/twitter.svg"/></a>
+              <a title="Instagram" className="" target="blank" href="https://www.instagram.com/iamjoshbraun/"><img src="/img/social/instagram.svg"/></a>
+              <a title="Linkedin" className="" target="blank" href="https://www.linkedin.com/in/joshuajbraun/"><img src="/img/social/linkedin.svg"/></a>
+              <a title="Dribbble" className="" target="blank" href="https://dribbble.com/iamjoshbraun"><img src="/img/social/dribbble.svg"/></a>
+              <a title="Messenger" className="" target="blank" href="https://www.messenger.com/t/joshuajbraun"><img src="/img/social/messenger.svg"/></a>
           </div>
           <div id="copyright">
               <p>© <span id="year">{year}</span> Josh Braun</p>
