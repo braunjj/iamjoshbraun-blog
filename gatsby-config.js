@@ -60,12 +60,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Josh Braun`,
+        short_name: `iamjoshbraun`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`
+        theme_color: `#000000`,
+        display: `minimal-ui`,
+        icon: `src/static/img/favicon.jpg`,
       },
     },
     {
