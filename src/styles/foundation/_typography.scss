@@ -1,3 +1,5 @@
+@use 'colors';
+
 $primary-font: 'Poppins', sans-serif;
 
 h1,
@@ -20,10 +22,11 @@ h2 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 28px;
   color: #555;
   margin: 12px 0 4px;
+  font-weight: 200;
 }
 
 label {
@@ -31,7 +34,7 @@ label {
 }
 
 a {
-  color: #cf3200;
+  color: colors.$accent-red;
   text-decoration: none;
   font-weight: 500;
 }

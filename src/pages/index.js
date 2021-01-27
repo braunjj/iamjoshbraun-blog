@@ -21,7 +21,7 @@ export default class Home extends Component {
             tools at <a target="blank" href="https://www.hyperscience.com">Hyperscience</a>.
           </p>
           <p>
-              Previously, I designed digital experiences for brands like Lowe’s and Lincoln Financial Group at <a target="blank" href="https://www.gmrmarketing.com">GMR</a>. I also led the design of a point-of-sale iOS app for a Fortune 500. Later, I joined retail startup <a target="blank" href="http://www.fourpost.com">Fourpost</a> (acquired in 2019) to help build a modern brick and mortar brand platform.
+              Previously I also led the design of a point-of-sale iOS app for a Fortune 500, and I designed digital experiences for brands like Lowe’s and Lincoln Financial Group at <a target="blank" href="https://www.gmrmarketing.com">GMR</a>. 
 
           </p>
           <p>I love working with early stage startups and new technologies.</p>
