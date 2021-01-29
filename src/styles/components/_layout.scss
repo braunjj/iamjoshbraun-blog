@@ -1,2 +1,57 @@
 @use '../foundation/colors';
 @use '../foundation/typography';
+
+.app {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 36px 24px;
+  display: flex;
+  min-height: 480px;
+}
+
+
+.app .grid-title{
+  width: 320px;
+  margin-right: 36px;
+  margin-bottom: 24px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.post{
+  //max-width: 720px;
+  display: block;
+}
+
+.app .grid-title.extended{
+  width: 400px;
+}
+
+.app .grid-content{
+  width: 100%;
+}
+
+.app .grid-content.homepage-hero{
+  margin-top: 100px;
+}
+
+
+@media all and (max-width: 740px) {
+  .app {
+    display: block;
+
+    .grid-content.homepage-hero{
+      margin-top: 0;
+    }
+  }
+
+  .app .grid-title{
+    width: 100%;
+
+    .homepage-hero{
+      max-width: 240px;
+    }
+  }
+}

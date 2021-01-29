@@ -1,8 +1,8 @@
 ---
-title: Hello World Updated
+title: Layout Editor Redesign
 post_type: Blog
 date: 2021-01-24T17:30:22.729Z
-description: Hello World
+description: How our team helped customers improve transcription automation with a new layout editing experience in Hyperscience.
 featuredimage: e0370b49-b908-4f6d-b59a-871b39161e2a.jpeg
 featuredimage_alt: Jersey city skyline
 ---

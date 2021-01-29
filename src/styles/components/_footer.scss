@@ -36,7 +36,7 @@ footer {
   box-shadow: none;
 }
 
-#copyright p{font-size: 12px; text-align:right; color: colors.$med-gray;}
+#copyright p{font-size: 12px; text-align:right; color: colors.$med-gray; margin-top: 4px;}
 
 @media all and (max-width: 940px) {
       footer {

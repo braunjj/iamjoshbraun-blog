@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
-import Layout from "../components/layout"
+import PostLayout from "../components/post-layout"
 import SEO from "../components/seo"
 
 const BlogPostTemplate = ({ data, location }) => {
@@ -11,7 +11,7 @@ const BlogPostTemplate = ({ data, location }) => {
   const { previous, next } = data
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <PostLayout location={location} title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -29,10 +29,9 @@ const BlogPostTemplate = ({ data, location }) => {
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <hr />
-        <footer>
+        <div>
           <Bio />
-        </footer>
+        </div>
       </article>
       <nav className="blog-post-nav">
         <ul
@@ -60,7 +59,7 @@ const BlogPostTemplate = ({ data, location }) => {
           </li>
         </ul>
       </nav>
-    </Layout>
+    </PostLayout>
   )
 }
 

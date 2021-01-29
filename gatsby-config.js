@@ -3,7 +3,7 @@ module.exports = {
     title: `Josh Braun`,
     author: {
       name: `Josh Braun`,
-      summary: `Hello! I’m Josh. I’m a product designer and developer located in NYC.`,
+      summary: `I’m a product designer and developer located in NYC.`,
     },
     description: `I’m Josh – a product designer and developer located in NYC.`,
     siteUrl: `https://iamjoshbraun.com`,
@@ -33,7 +33,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
+              maxWidth: 640,
             },
           },
           {

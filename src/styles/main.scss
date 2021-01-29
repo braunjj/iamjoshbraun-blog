@@ -2,6 +2,8 @@
 @use './foundation/typography';
 @forward "./components/header";
 @forward "./components/footer";
+@forward "./components/layout";
+
 //@forward "./foundation/gatsby-starter";
 
 html {
@@ -69,9 +71,6 @@ button:active {
   font-weight: 300;
 }
 
-form#contact {
-  max-width: 640px;
-}
 
 input,
 textarea {
@@ -110,89 +109,77 @@ textarea:focus {
   border-bottom: 1px solid #e8e8e8;
 }
 
-.app {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 24px;
-  margin-bottom: 48px;
-  display:block;
-}
-
-#homepage_hero {
-  display: flex;
-  margin-top: 36px;
-}
-
-#homepage_hero #hero_content {
-  position: relative;
-  margin-top: 80px;
-}
-
-#homepage_profile {
-  margin-right: 36px;
-  margin-left: 0;
-}
-#homepage_profile img {
-  max-width: 280px;
-  height: auto;
-}
-
-.page_hero {
+.work-post.article{
   width: 100%;
-  padding: 48px 0 24px 0;
+  margin: 0 0 24px 0;
+  border: 1px solid colors.$light-gray;
+  border-radius: 2px;
+  padding: 24px;
+  display: block;
+  box-sizing: border-box;
+
+  border-radius: 12px;
+  position: relative;
+  transition: all .3s ease;
+
+
+  article{
+    display: flex;
+  }
+
+  .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    h2,p{
+      width: 100%;
+      color: colors.$black;
+    }
+  }
+
+  .thumbnail .gatsby-image-wrapper{
+    margin-right: 24px;
+    overflow: hidden;
+    border-radius: 12px;
+  }
 }
 
-p#success_message{
-  color: #000000;
-  font-weight: 500;
+.work-post.article:hover{
+  border: 1px solid colors.$light-gray;
+  cursor: pointer;
+  box-shadow: 0 1px 5px #eee;
+  text-decoration: none !important;
+  //top: -3px;
+
+  h2,p{
+    color: colors.$accent-red;
+  }
+
 }
 
-p#success_message.hidden{display:none}
+.bio {
+  display: flex;
+  width: 100%;
+  padding: 48px 0;
+  border-bottom: 1px solid colors.$light-gray;
 
+
+  .bio-avatar {
+    margin-right: 24px;
+  }
+
+  p.small{
+    margin: 0;
+  }
+}
 
 @media all and (max-width: 840px) {
-  /* line 149, /Users/jbraun/Google Drive/Workshop/Sites/iamjoshbraun.com-v2.0/files/scss/_fonts.scss */
 
-  #homepage_hero {
-    display: flex;
-    margin-top: 36px;
-  }
 
-  #homepage_hero #hero_content {
-    margin-top: 24px;
-  }
-
-  #homepage_profile {
-    margin-right: 36px;
-  }
-
-  #homepage_profile img {
-    width: 300px;
-    max-width: 300px;
-    height: auto;
-  }
 }
 
 @media all and (max-width: 640px) {
-  /* line 149, /Users/jbraun/Google Drive/Workshop/Sites/iamjoshbraun.com-v2.0/files/scss/_fonts.scss */
-  #homepage_hero {
-    margin-top: 36px;
-    display: block;
-  }
 
-  #homepage_hero #hero_content {
-    top: 0px;
-  }
-
-  #homepage_profile {
-  }
-
-  #homepage_profile img {
-    width: 100%;
-    max-width: 200px;
-  }
-
-  .social_links {
-    margin-bottom: 48px;
-  }
 }

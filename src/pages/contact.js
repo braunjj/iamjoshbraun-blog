@@ -9,24 +9,22 @@ export default class Home extends Component {
       <Layout location="contact" title="Josh Braun">
       <SEO title="Contact" />
 
-        <div class="page_hero">
-          <h1>Say Hello 👋🏻</h1>
-          <p>Complete the form below or reach out via email at <a href="mailto:hello@iamjoshbraun.com">hello@iamjoshbraun.com</a>.</p>
+        <div className="grid-title">
+          <h1>What's up? 👋</h1>
+          <p>Complete the form or reach out via email at <a href="mailto:josh@iamjoshbraun.com">josh@iamjoshbraun.com</a>.</p>
         </div>
 
-        <form id="contact" name="contact" netlify action="contact#success">
+        <form className="grid-content" id="contact" name="contact" netlify action="#success">
         <p>
-          <label>Name <input tabindex="1" type="text" name="name" placeholder="Johny Appleseed"/></label>
+          <label>Name <input tabindex="1" type="text" name="name" placeholder="Elon Musk"/></label>
         </p>
         <p>
-          <label>Email <input tabindex="2" type="email" name="email" placeholder="Johny Appleseed"/></label>
+          <label>Email <input tabindex="2" type="email" name="email" placeholder="elon@tesla.com"/></label>
         </p>
         <p>
           <label>Note <textarea tabindex="3" rows="4" name="note" placeholder="What's up?"/></label>
         </p>
-        <p>
           <button id="send" tabindex="4" type="submit">Send</button>
-        </p>
       </form>
       </Layout>
       )
