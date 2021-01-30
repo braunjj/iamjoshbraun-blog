@@ -1,6 +1,6 @@
 ---
 title: My Second Post!
-post_type: Case Study
+post_type: Visual Design
 date: 2015-05-06T23:46:37.121Z
 description: Just a test
 ---
