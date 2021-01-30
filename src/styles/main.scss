@@ -111,14 +111,11 @@ textarea:focus {
 
 .work-post.article{
   width: 100%;
-  margin: 0 0 24px 0;
-  border: 1px solid colors.$light-gray;
+  border-bottom: 1px solid colors.$light-gray;
   border-radius: 2px;
   padding: 24px;
   display: block;
   box-sizing: border-box;
-
-  border-radius: 12px;
   position: relative;
   transition: all .3s ease;
 
@@ -135,7 +132,7 @@ textarea:focus {
 
     h2,p{
       width: 100%;
-      color: colors.$black;
+      //color: colors.$black;
     }
   }
 
@@ -143,18 +140,24 @@ textarea:focus {
     margin-right: 24px;
     overflow: hidden;
     border-radius: 12px;
+    transition: all .3s ease;
   }
 }
 
-.work-post.article:hover{
-  border: 1px solid colors.$light-gray;
-  cursor: pointer;
-  box-shadow: 0 1px 5px #eee;
-  text-decoration: none !important;
-  //top: -3px;
+.work-post.article:last-child{
+  border-bottom: none;
+}
 
-  h2,p{
-    color: colors.$accent-red;
+.work-post.article:hover, .work-post.article:focus {
+  cursor: pointer;
+  text-decoration: none !important;
+
+  h2{
+    text-decoration: underline;
+  }
+
+  .thumbnail .gatsby-image-wrapper{
+    transform: scale(1.02);
   }
 
 }
