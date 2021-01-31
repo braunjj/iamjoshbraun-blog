@@ -185,8 +185,10 @@ textarea:focus {
 
 @media all and (max-width: 540px) {
   .work-post.article{
-      .thumbnail{
-        display:none;
+      .thumbnail .gatsby-image-wrapper{
+        //display:none;
+
+
       }
     }
 }

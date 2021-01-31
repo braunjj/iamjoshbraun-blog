@@ -3,9 +3,10 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
+import Thumbnail from "../components/thumbnail"
+
 import SEO from "../components/seo"
 import Img from "gatsby-image"
-
 
 const WorkIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -28,43 +29,9 @@ const WorkIndex = ({ data, location }) => {
   return (
     <Layout location="{location}" title={siteTitle}>
       <SEO title="Work" />
-      <div className="grid-title">
-        <h1>Case Studies</h1>
-        <p>End-to-end product design and discovery</p>
-      </div>
-      <div className="grid-content">
-          {posts.map(post => {
-            const title = post.frontmatter.title || post.fields.slug
-            let featuredimage = post.frontmatter.featuredimage
-            featuredimage = featuredimage ? <Img fixed={featuredimage.childImageSharp.fixed} fadeIn="false" alt={post.frontmatter.featuredimage_alt}/> : ""
-
-            return (
-              <Link to={post.fields.slug} itemProp="url" key={post.fields.slug} className="work-post article">
-                <article
-                  className="post-list-item"
-                  itemScope
-                  itemType="http://schema.org/Article"
-                >
-                  <div className="thumbnail">
-                    {featuredimage}
-                  </div>
-                  <div className="body">
-                    <div className="wrapper">
-                      <h2 itemProp="headline">{title}</h2>
-                      <p
-                        dangerouslySetInnerHTML={{
-                          __html: post.frontmatter.description || post.excerpt,
-                        }}
-                        itemProp="description"
-                      />
-                    </div>
-                  </div>
-                </article>
-                </Link>
-
-            )
-          })}
-      </div>
+      <Thumbnail posts={posts} post_type="Case Study" section_title="Case Studies" section_description="End-to-end product design"/>
+      <Thumbnail posts={posts} post_type="Visual Design"  section_title="Visual Design" section_description="User interface, branding, and identity design"/>
+      <Thumbnail posts={posts} post_type="Personal Project"  section_title="Personal Projects" section_description="Side projects and things I've built just for fun"/>
     </Layout>
   )
 }
@@ -78,7 +45,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {frontmatter: {post_type: {eq: "Case Study"}}}) {
+    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
       nodes {
         excerpt
         fields {
@@ -86,6 +53,7 @@ export const pageQuery = graphql`
         }
         frontmatter {
           description
+          post_type
           date(formatString: "MMMM DD, YYYY")
           title
           featuredimage {
