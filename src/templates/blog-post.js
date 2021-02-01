@@ -16,6 +16,7 @@ const BlogPostTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
+      <Link to = "/work/"><h4>« All Work</h4></Link>
       <article
         className="blog-post"
         itemScope
@@ -23,9 +24,9 @@ const BlogPostTemplate = ({ data, location }) => {
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <p itemProp="description">{post.frontmatter.description}</p>
         </header>
-        <section
+        <div
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />

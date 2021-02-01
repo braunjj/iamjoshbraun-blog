@@ -151,7 +151,7 @@ textarea:focus {
   .thumbnail .gatsby-image-wrapper{
     height: 240px;
     transition: all .3s ease;
-    opacity: .85;
+    opacity: 1;
   }
   .thumbnail {
     background: #000;
@@ -179,7 +179,7 @@ textarea:focus {
   }
 
   .thumbnail .gatsby-image-wrapper{
-    opacity: 1;
+    opacity: .85;
   }
 
 }
