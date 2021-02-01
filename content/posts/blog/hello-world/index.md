@@ -1,7 +1,6 @@
 ---
-pubished: true
 title: This is a test blog post
-published: false
+published: true
 category: Blog
 post_type: Personal Project
 date: 2021-01-24T17:30:22.729Z

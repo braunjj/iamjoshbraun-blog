@@ -45,7 +45,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {frontmatter: {published: {eq: true}, category: {eq: "Work"}}}) {
       nodes {
         excerpt
         fields {
@@ -53,6 +53,7 @@ export const pageQuery = graphql`
         }
         frontmatter {
           description
+          published
           post_type
           date(formatString: "MMMM DD, YYYY")
           title

@@ -1,6 +1,6 @@
 ---
 title: My Second Post!
-pubished: true
+published: false
 category: Work
 post_type: Visual Design
 date: 2015-05-06T23:46:37.121Z

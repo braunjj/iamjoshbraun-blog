@@ -1,5 +1,4 @@
 ---
-pubished: true
 title: Layout Editor Redesign
 published: true
 category: Work

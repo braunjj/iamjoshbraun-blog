@@ -12,7 +12,7 @@ const Post = () => {
             title
           }
         }
-        allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {frontmatter: {pubished: {eq: true}, category: {eq: "Work"}}}) {
+        allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {frontmatter: {published: {eq: true}, category: {eq: "Work"}}}) {
           nodes {
             excerpt
             fields {
