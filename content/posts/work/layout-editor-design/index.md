@@ -1,16 +1,16 @@
 ---
-title: Layout Editor Redesign
 pubished: true
+title: Layout Editor Redesign
+published: true
 category: Work
 post_type: Case Study
 date: 2021-01-24T17:01:34.454Z
 description: How our team helped customers improve transcription automation with
   a new layout editing experience in Hyperscience.
-featuredimage: logo.png
+featuredimage: hyperscience.png
 featuredimage_alt: Hyperscience Logo
-timeline: "4 Months"
-team: "1 Design Lead (Me), 1 PM, 1 Eng Lead, 4 Engineers"
-
+timeline: 4 Months
+team: 1 Design Lead (Me), 1 PM, 1 Eng Lead, 4 Engineers
 ---
 
 ## Project Background
