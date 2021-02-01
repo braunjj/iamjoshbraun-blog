@@ -11,6 +11,7 @@ collections:
     folder: 'content/posts/work'
     create: true
     slug: 'index'
+    summary: "{{post_type}} // {{title}} "
     media_folder: ''
     public_folder: ''
     path: '{{title}}/index'
@@ -18,11 +19,16 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Published', name: 'published', widget: 'boolean', default: false, required: true}
+      - { label: "Category", name: "category", widget: "hidden", default: "Work"}
       - { label: "Post Type", name: "post_type", widget: "select", options: ["Case Study", "Visual Design", "Personal Project"]}
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Thumbnail', name: 'featuredimage', widget: 'image', allow_multiple: false, required: false }
       - { label: 'Thumbnail Alt', name: 'featuredimage_alt', widget: 'string', required: false }
+      - { label: 'Timeline', name: 'timeline', widget: 'string', required: false }
+      - { label: 'Team', name: 'team', widget: 'string', required: false }
+
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'blog'
     label: 'Blog'
@@ -36,7 +42,9 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - {label: "Post Type", name: "post_type", widget: "hidden", default: "Blog"}
+      - { label: 'Published', name: 'published', widget: 'boolean', default: false, required: true}
+      - { label: "Category", name: "category", widget: "hidden", default: "Blog"}
+      - { label: "Post Type", name: "post_type", widget: "hidden", default: "Blog"}
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Thumbnail', name: 'featuredimage', widget: 'image', allow_multiple: false, required: false }

@@ -1,8 +1,14 @@
 ---
 title: My Second Post!
+pubished: true
+category: Work
 post_type: Visual Design
 date: 2015-05-06T23:46:37.121Z
 description: Just a test
+
+timeline: ""
+team: ""
+
 ---
 
 Wow! I love blogging so much already.

@@ -1,5 +1,7 @@
 ---
 title: Layout Editor Redesign
+pubished: true
+category: Blog
 post_type: Personal Project
 date: 2021-01-24T17:30:22.729Z
 description: How our team helped customers improve transcription automation with a new layout editing experience in Hyperscience.
