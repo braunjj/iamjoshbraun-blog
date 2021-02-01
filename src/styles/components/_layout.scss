@@ -1,6 +1,12 @@
 @use '../foundation/colors';
 @use '../foundation/typography';
 
+.loading{
+  opacity: 0;
+  position: relative;
+  top: 4px;
+  transition: all .3s ease;
+}
 .app {
   max-width: 940px;
   margin: 0 auto;
@@ -49,11 +55,11 @@
     }
   }
 
-  .app .grid-title{
+  .app .grid-title, .app .grid-title.extended{
     width: 100%;
 
     .homepage-hero{
-      max-width: 240px;
+      max-width: 160px;
     }
   }
 }

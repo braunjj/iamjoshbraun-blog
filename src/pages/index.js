@@ -1,17 +1,39 @@
-import React, { Component } from 'react';
+import React from "react"
 import Layout from "../components/layout"
 import Image from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
+
+
 
 import SEO from "../components/seo"
 
-export default class Home extends Component {
+export const Home = () => {
 
-  render() {
+    const data = useStaticQuery(graphql`
+      query ProfileQuery {
+        avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+          childImageSharp {
+            fluid(maxWidth: 500, maxHeight: 500) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+
+      }
+    `)
+
+    const avatar = data?.avatar?.childImageSharp?.fluid
+
     return (
       <Layout location="home" title="Josh Braun">
       <SEO title="Home" />
       <div className="grid-title extended">
-        <img class="homepage-hero" src="/img/joshbraun.jpg"/>
+        <Image className="homepage-hero"
+          fluid={avatar}
+          fadeIn= "true"
+          alt="Josh Braun"
+        />
       </div>
         <div className="grid-content homepage-hero">
           <h1>Hello, I’m Josh – a product designer & developer located in NYC.</h1>
@@ -24,9 +46,10 @@ export default class Home extends Component {
 
           </p>
           <p>I love working with early stage startups and new technologies.</p>
-          <a title="contact me" class="button" href="../contact">Contact Me</a>
+          <Link to="/work" title="work" class="button">Check out my work</Link>
           </div>
       </Layout>
       )
-    }
-}
+  }
+
+  export default Home
