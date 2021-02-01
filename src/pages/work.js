@@ -27,7 +27,7 @@ const WorkIndex = ({ data, location }) => {
   }
 
   return (
-    <Layout location="{location}" title={siteTitle}>
+    <Layout location="{location}" title={siteTitle} specialClass="block">
       <SEO title="Work" />
       <Thumbnail posts={posts} post_type="Case Study" section_title="Case Studies" section_description="End-to-end product design"/>
       <Thumbnail posts={posts} post_type="Visual Design"  section_title="Visual Design" section_description="User interface, branding, and identity design"/>
@@ -59,9 +59,9 @@ export const pageQuery = graphql`
           featuredimage {
             publicURL
             childImageSharp {
-              fixed(width: 200, height: 200){
-                  ...GatsbyImageSharpFixed
-                }
+                fluid(maxWidth: 800, maxHeight: 600) {
+                  ...GatsbyImageSharpFluid
+              }
             }
           }
           featuredimage_alt

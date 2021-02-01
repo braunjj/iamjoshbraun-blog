@@ -13,7 +13,7 @@ export default class Thumbnail extends Component {
     console.log(posts)
 
     return (
-        <section>
+        <section class="flex">
         <div className="grid-title">
           <h1>{this.props.section_title}</h1>
           <p>{this.props.section_description}</p>
@@ -22,7 +22,8 @@ export default class Thumbnail extends Component {
             {posts.filter(post => post.frontmatter.post_type === this.props.post_type).map(filteredPost => {
               const title = filteredPost.frontmatter.title || filteredPost.fields.slug
               let featuredimage = filteredPost.frontmatter.featuredimage
-              featuredimage = featuredimage ? <Img fixed={featuredimage.childImageSharp.fixed} fadeIn="false" alt={filteredPost.frontmatter.featuredimage_alt}/> : ""
+              console.log(featuredimage)
+              featuredimage = featuredimage ? <Img fluid={featuredimage.childImageSharp.fluid} fadeIn="false" alt={filteredPost.frontmatter.featuredimage_alt}/> : ""
 
               return (
                 <Link to={filteredPost.fields.slug} itemProp="url" key={filteredPost.fields.slug} className="work-post article">

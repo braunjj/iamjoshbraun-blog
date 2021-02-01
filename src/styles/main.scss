@@ -21,6 +21,13 @@ html {
   color: #000;
 }
 
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
 
 a.button,
 button {
@@ -121,7 +128,7 @@ textarea:focus {
 
 
   article{
-    display: flex;
+    display: block;
   }
 
   .body {
@@ -132,16 +139,31 @@ textarea:focus {
 
     h2,p{
       width: 100%;
-      //color: colors.$black;
+      margin-top: 0;
     }
+
+    h2{
+      margin-bottom: 4px;;
+    }
+
   }
 
   .thumbnail .gatsby-image-wrapper{
-    margin-right: 24px;
-    overflow: hidden;
-    border-radius: 12px;
+    height: 240px;
     transition: all .3s ease;
+    opacity: .85;
   }
+  .thumbnail {
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 12px;
+
+  }
+}
+
+.work-post.article:first-child{
+  padding-top: 12px;
 }
 
 .work-post.article:last-child{
@@ -157,7 +179,7 @@ textarea:focus {
   }
 
   .thumbnail .gatsby-image-wrapper{
-    transform: scale(1.02);
+    opacity: 1;
   }
 
 }
@@ -178,8 +200,15 @@ textarea:focus {
   }
 }
 
-@media all and (max-width: 840px) {
+@media all and (max-width: 800px) {
+  .flex {
+      flex-wrap: wrap;
+  }
 
+  .work-post.article{
+    padding-left: 0;
+    padding-right: 0;
+  }
 
 }
 

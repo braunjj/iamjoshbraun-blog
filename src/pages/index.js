@@ -19,7 +19,6 @@ export const Home = () => {
             }
           }
         }
-
       }
     `)
 
@@ -46,7 +45,7 @@ export const Home = () => {
 
           </p>
           <p>I love working with early stage startups and new technologies.</p>
-          <Link to="/work" title="work" class="button">Check out my work</Link>
+          <Link to="/work/" title="work" class="button">Check out my work</Link>
           </div>
       </Layout>
       )
