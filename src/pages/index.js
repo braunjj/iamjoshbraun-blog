@@ -30,7 +30,7 @@ export const Home = () => {
       <div className="grid-title extended">
         <Image className="homepage-hero"
           fluid={avatar}
-          fadeIn= "true"
+          fadeIn= "false"
           alt="Josh Braun"
         />
       </div>

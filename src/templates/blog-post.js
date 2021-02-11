@@ -28,6 +28,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p itemProp="description">{post.frontmatter.description}</p>
+
         </header>
         <div
           dangerouslySetInnerHTML={{ __html: post.html }}
