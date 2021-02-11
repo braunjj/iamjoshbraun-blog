@@ -32,6 +32,7 @@ export const Home = () => {
           fluid={avatar}
           fadeIn= "false"
           alt="Josh Braun"
+          loading="eager"
         />
       </div>
         <div className="grid-content homepage-hero">
