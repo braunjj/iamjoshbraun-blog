@@ -4,7 +4,7 @@ published: true
 category: Work
 post_type: Case Study
 date: 2021-01-24T17:01:34.454Z
-description: How our team helped customers improve transcription automation with
+description: How our team helped enterprise customers improve transcription automation with
   a new layout editing experience in Hyperscience.
 featuredimage: layout-editor.jpg
 featuredimage_alt: Hyperscience Logo
@@ -18,7 +18,7 @@ The Hyperscience platform helps enterprise customers automate data entry of pape
 
 ## What is a layout and why is it important?
 
-When a user wants Hyperscience to extract data from a specific form, they must first create a layout in the system. Layouts help guide the transcription models and train the machine how to identify a form and which fields to extract from it. When a layout is not configured properly or is missing all-together, it can severely reduce the automation rates for our customers. They don’t like that. 
+When a user wants Hyperscience to extract data from a specific form, they must first create a layout in the system. Layouts help guide the transcription models and teach the machine how to identify a form and which fields to extract from it. When a layout is not configured properly or is missing all-together, it can severely reduce the automation rates for our customers. They don’t like that. 
 
 To configure a layout, users must upload a blank version of the form and draw bounding boxes around all of the fields they need to extract – this might include text fields, dates, checkboxes, signatures, and more.
 

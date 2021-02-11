@@ -181,7 +181,6 @@ textarea:focus {
   .thumbnail .gatsby-image-wrapper{
     opacity: .85;
   }
-
 }
 
 .bio {
@@ -215,9 +214,7 @@ textarea:focus {
 @media all and (max-width: 540px) {
   .work-post.article{
       .thumbnail .gatsby-image-wrapper{
-        //display:none;
-
-
+        height: 130px;
       }
     }
 }

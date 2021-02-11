@@ -1,5 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
+
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -9,6 +11,7 @@ const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
+  let featuredimage = post.frontmatter.featuredimage
 
   return (
     <Layout location={location} title={siteTitle} specialClass="post">
@@ -85,6 +88,15 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        featuredimage {
+          publicURL
+          childImageSharp {
+              fluid(maxWidth: 740, maxHeight: 240) {
+                ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        featuredimage_alt
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
