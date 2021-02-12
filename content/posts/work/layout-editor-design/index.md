@@ -23,7 +23,7 @@ When a user wants Hyperscience to extract data from a specific form, they must f
 
 To configure a layout, users must upload a blank version of the form and draw bounding boxes around all of the fields they need to extract – this might include text fields, dates, checkboxes, signatures, and more.
 
-![Original Layout Editor Design](screen-shot-2020-12-10-at-1.12.20-pm.png "The original Layout Editor design")
+![Original Layout Editor Design](layout-editor-old.png "The original Layout Editor design")
 
 Here’s a hypothetical example of a completed layout for an insurance application form. In this case an insurance underwriter is our primary user, she would have gone into Hyperscience to upload a blank version of the insurance form and then drawn bounding boxes to label all of the fields she needed to extract. You can see that each field has a few settings that can be configured here as well - these settings help the machine do its job but we won’t discuss them all here.
 
@@ -48,7 +48,7 @@ We identified the following pain pain points:
 
 * We discovered that our users often didn’t have an ideal “blank” document image to create a new layout – they sometimes only had a series of completed forms that they needed to extract data from. 
 
-![](screen-shot-2021-01-20-at-11.21.15-pm.png)
+![New Layout Editor](screen-shot-2021-02-11-at-7.26.30-pm.png "New Layout Editor")
 
 ## Our solution
 
