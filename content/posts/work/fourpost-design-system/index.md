@@ -10,4 +10,8 @@ featuredimage_alt: Fourpost Design System
 timeline: 2 Months
 team: 1 Product Designer (me)
 ---
-More to come...
+![Visual Design System](design-system-visual.jpg "Visual Design System")
+
+![Components](design-system-components.jpg "Components")
+
+![ Design System usage examples](design-system-demos.jpg " Design System usage examples")
