@@ -33,18 +33,18 @@ Layouts are critical to the automation process, but we heard from customers that
 
 We identified the following pain pain points:
 
-\###As a layout owner, drawing fields to create a new layout took too much time and was easy to mess up.###
+### As a layout owner, drawing fields to create a new layout took too much time and was easy to mess up.
 
 * Most layouts are multiple pages and have hundreds or even thousands of fields that often look really similar. For example, a form might have 10 checkboxes in a row. Users had to draw and properly label all 10 of those checkboxes.
 * Checkboxes saw the largest drop in automation when users didn’t draw them properly around the checkbox outline.
 * The layout editor design required users to awkwardly pan and zoom around the document in a small portion of the screen to draw fields effectively. 
 
-\###As a Layout owner, making changes to an existing layout was frustrating.###
+### As a Layout owner, making changes to an existing layout was frustrating.
 
 * Users often returned to the layout editor to modify field configurations while optimizing a layout. For example, they may adjust the format of a date field or mark a certain field as Required. Unfortunately, there was no easy way to search for specific fields by name or type. Users had to hunt for the specific field they wanted on each page of the layout.
 * Additionally, we found that users tend to make the same changes over and over again when optimizing layouts – if they were changing the data format for one field, they usually needed to change it for all similar fields.
 
-\###As a layout owner, I want to create a new layout, but I don’t have a high quality blank version of the form to start with.###
+### As a layout owner, I want to create a new layout, but I don’t have a high quality blank version of the form to begin.
 
 * We discovered that our users often didn’t have an ideal “blank” document image to create a new layout – they sometimes only had a series of completed forms that they needed to extract data from. 
 
@@ -52,18 +52,18 @@ We identified the following pain pain points:
 
 ## Our solution
 
-\###Creating new layouts and drawing fields###
+### Creating new layouts and drawing fields
 
 * To make this experience a bit easier, we first redistributed the core elements on the page to give more space to the document editing canvas. This meant users wouldn’t have to pan and zoom as much when drawing lots of fields. We also Introduced a new streamlined toolbar design to help give more space to the document editing experience. 
 * We also added two new beta features to help speed up drawing repetitive fields and increase accuracy called Auto Clone and One-click mode.
 * Auto Clone allowed a user to draw and label one field then magically find all other fields on the page that looked similar and instantly create them. This was especially useful when labeling forms with lots of checkboxes
 * One-click mode was a setting that allowed users to click anywhere within a blank field and have the system automatically identify and draw the bounding box for you. This meant perfectly drawn bounding boxes every time.  
 
-\###Editing layouts###
+### Editing layouts
 
 * To help users edit and optimize layouts, we added the ability to bulk edit fields and redesigned the sidebar to make room for a new field search and filters. When used together, users could now quickly search for any instance of a field across all document pages, select them all and bulk edit their configurations with just a few clicks.
 
-\###Creating missing layouts###
+### Creating missing layouts
 
 * To help business process managers create new layouts from poor quality document images, we introduced a new image editing experience at the beginning of the flow. Users no longer needed a high quality blank document to get started – they could simply upload any completed document then adjust, crop, and erase any previous text from the image. This gave users the power to edit images right from within the layout creation flow.
 
