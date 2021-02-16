@@ -8,7 +8,7 @@ description: I created an bold but functional design system for Fourpost's brand
 featuredimage: fourpost_design_system.jpg
 featuredimage_alt: Fourpost Design System
 timeline: 2 Months
-team: 1 Product Designer (me)
+team: 1 Designer (me)
 ---
 ![Visual Design System](design-system-visual.jpg "Visual Design System")
 

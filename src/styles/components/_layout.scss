@@ -42,6 +42,27 @@
     padding-bottom: 24px;
     border-bottom: 1px solid colors.$light-gray;
   }
+
+  table.project_meta{
+    width: 100%;
+    font-weight: 200;
+    color: colors.$dark-gray;
+    margin-top: 24px;
+
+    thead{
+      font-weight: 400;
+      color: colors.$black;
+    }
+
+    tr {vertical-align: top;}
+    td {
+      display: inline-flex;
+      width: 49%;
+
+      svg {margin-right: 8px;}
+    }
+
+  }
 }
 
 .app .grid-title.extended{

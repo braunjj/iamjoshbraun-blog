@@ -9,7 +9,7 @@ description: How our team helped enterprise customers improve transcription
 featuredimage: layout-editor.jpg
 featuredimage_alt: Hyperscience Logo
 timeline: 4 Months
-team: 1 Design Lead (Me), 1 PM, 1 Eng Lead, 4 Engineers
+team: 1 PM, 4 Engineers, 1 Designer (Me)
 ---
 ## Project Background
 
