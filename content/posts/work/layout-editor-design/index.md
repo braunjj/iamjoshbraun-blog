@@ -44,10 +44,6 @@ We identified the following pain pain points:
 * Users often returned to the layout editor to modify field configurations while optimizing a layout. For example, they may adjust the format of a date field or mark a certain field as Required. Unfortunately, there was no easy way to search for specific fields by name or type. Users had to hunt for the specific field they wanted on each page of the layout.
 * Additionally, we found that users tend to make the same changes over and over again when optimizing layouts – if they were changing the data format for one field, they usually needed to change it for all similar fields.
 
-### As a layout owner, I want to create a new layout, but I don’t have a high quality blank version of the form to begin.
-
-* We discovered that our users often didn’t have an ideal “blank” document image to create a new layout – they sometimes only had a series of completed forms that they needed to extract data from.
-
 ![Original Layout Editor](old_layout_editor.png "Original Layout Editor")
 
 ![The New Layout Editor Design](new_layout_editor.png "The New Layout Editor Design")
@@ -64,10 +60,6 @@ We identified the following pain pain points:
 ### Editing layouts
 
 * To help users edit and optimize layouts, we added the ability to bulk edit fields and redesigned the sidebar to make room for a new field search and filters. When used together, users could now quickly search for any instance of a field across all document pages, select them all and bulk edit their configurations with just a few clicks.
-
-### Creating missing layouts
-
-* To help business process managers create new layouts from poor quality document images, we introduced a new image editing experience at the beginning of the flow. Users no longer needed a high quality blank document to get started – they could simply upload any completed document then adjust, crop, and erase any previous text from the image. This gave users the power to edit images right from within the layout creation flow.
 
 ## Validation and Launch
 
