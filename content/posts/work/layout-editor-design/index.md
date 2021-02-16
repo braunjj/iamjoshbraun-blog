@@ -6,7 +6,7 @@ post_type: Case Study
 date: 2021-01-24T17:01:34.454Z
 description: How our team helped enterprise customers improve transcription
   automation with a new layout editing experience in Hyperscience.
-featuredimage: layout-editor.jpg
+featuredimage: layout_editor_thumb.png
 featuredimage_alt: Hyperscience Logo
 timeline: 4 Months
 team: 1 PM, 4 Engineers, 1 Designer (Me)
@@ -15,7 +15,7 @@ team: 1 PM, 4 Engineers, 1 Designer (Me)
 
 The Hyperscience platform helps enterprise customers automate data entry of paper forms. We use machine learning models to automatically classify documents and extract handwriting and printed text from them, then output the extracted text as structured JSON to a downstream system. Common use cases include extracting text from health insurance claims, mortgage applications, invoices, or paystubs. Our customers use Hyperscience because it can drastically reduce the amount of manual work that’s required to process a paper document or form.
 
-![Hyperscience Workflow](hyperscience-flow.png "Hyperscience Workflow")
+![Hyperscience Workflow](hyperscience_flow.png "Hyperscience Workflow")
 
 ## What is a layout and why is it important?
 
@@ -23,7 +23,7 @@ When a user wants Hyperscience to extract data from a specific form, they must f
 
 To configure a layout, users must upload a blank version of the form and draw bounding boxes around all of the fields they need to extract – this might include text fields, dates, checkboxes, signatures, and more.
 
-![Original Layout Editor Design](layout-editor-old.png "The original Layout Editor design")
+![Sample Layout](sample_layout.png "Sample Layout")
 
 Here’s a hypothetical example of a completed layout for an insurance application form. In this case an insurance underwriter is our primary user, she would have gone into Hyperscience to upload a blank version of the insurance form and then drawn bounding boxes to label all of the fields she needed to extract. You can see that each field has a few settings that can be configured here as well - these settings help the machine do its job but we won’t discuss them all here.
 
@@ -46,9 +46,11 @@ We identified the following pain pain points:
 
 ### As a layout owner, I want to create a new layout, but I don’t have a high quality blank version of the form to begin.
 
-* We discovered that our users often didn’t have an ideal “blank” document image to create a new layout – they sometimes only had a series of completed forms that they needed to extract data from. 
+* We discovered that our users often didn’t have an ideal “blank” document image to create a new layout – they sometimes only had a series of completed forms that they needed to extract data from.
 
-![New Layout Editor](screen-shot-2021-02-11-at-7.26.30-pm.png "New Layout Editor")
+![Original Layout Editor](old_layout_editor.png "Original Layout Editor")
+
+![The New Layout Editor Design](new_layout_editor.png "The New Layout Editor Design")
 
 ## Our solution
 
