@@ -2,7 +2,7 @@
 title: Smart Mirror Prototype
 published: true
 category: Work
-post_type: Visual Design
+post_type: Personal Project
 date: 2021-02-20T14:01:02.533Z
 description: Smart Mirror Prototype
 featuredimage: smart-mirrror.png
@@ -23,18 +23,16 @@ After a few iterations of my mirror, I started to realize that the hardware need
 * Mirrors are usually in public spaces – Mirror OS needs to know who is using it since most mirrors are shared.
 * Mirrors come in a variety of styes –  Mirror OS needs to be able to work on any shape or size of mirror.
 
-\###Personal Use – Facial Recognition
+###Personal Use – Facial Recognition
 I mounted a camera behind the glass to capture a frame once per second. The app scans each image to detect the amount of change between them. Once a certain threshold of motion is detected, the image is analyzed using the Kairos API to distinguish any faces within the frame. All of this comes together to give the mirror the magical ability to know who you are as soon as the you walk up to it. With this information the mirror can show you personalized news or traffic updates. Each user is logged out as soon as they walk away.
 
-```
 <figure class="content work one super_compressed_width">
     <div class="youtubeWrapper">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/-vpdDDPfPnU?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 </figure>
-```
 
-\###Passive Use
+###Passive Use
 The mirror always displays the current weather, date and time. I’ve also connected the mirror to Spotify so that it displays the album artwork and song title for any song that’s being played. This is especially useful when playing music via my Google Home.
 
 ![Smart Mirror](image2.jpg "Smart Mirror")
@@ -43,5 +41,5 @@ The mirror always displays the current weather, date and time. I’ve also conne
 
 ![Smart Mirror Animated](image5.gif "Smart Mirror Animated")
 
-\###What's Next
+###What's Next
 I am working on a larger version of my smart mirror prototype next and plan to expand on the facial recognition functionality – giving more customized experience to each individual user who walks up to the mirror.
