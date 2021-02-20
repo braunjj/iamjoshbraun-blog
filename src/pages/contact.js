@@ -14,7 +14,7 @@ export default class Home extends Component {
           <p>Complete the form or reach out via email at <a href="mailto:josh@iamjoshbraun.com">josh@iamjoshbraun.com</a>.</p>
         </div>
 
-        <form data-netlify="true" className="grid-content" id="contact" name="Contact">
+        <form className="grid-content" id="contact" name="contact" method="POST">
         <p>
           <label>Name <input tabindex="1" type="text" name="name" placeholder="Elon Musk"/></label>
         </p>
