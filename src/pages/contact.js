@@ -14,7 +14,7 @@ export default class Home extends Component {
           <p>Complete the form or reach out via email at <a href="mailto:josh@iamjoshbraun.com">josh@iamjoshbraun.com</a>.</p>
         </div>
 
-        <form className="grid-content" id="contact" name="contact" method="POST" action="#success">
+        <form className="grid-content" id="contact" name="contact" method="POST" action="/contact/#success">
         <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>Name <input tabindex="1" type="text" name="name" placeholder="Elon Musk"/></label>
