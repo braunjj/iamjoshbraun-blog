@@ -9,7 +9,8 @@ export default class Thumbnail extends Component {
   }
 
   render() {
-    const posts = this.props.posts
+    const posts = this.props.posts;
+    const noPosts = this.props.posts.length === 0 ? "No posts yet" : "";
     console.log(posts)
 
     return (
@@ -18,13 +19,15 @@ export default class Thumbnail extends Component {
           <h1>{this.props.section_title}</h1>
           <p>{this.props.section_description}</p>
         </div>
+        
         <div className="grid-content">
+            {noPosts}
             {posts.filter(post => post.frontmatter.post_type === this.props.post_type).map(filteredPost => {
               const title = filteredPost.frontmatter.title || filteredPost.fields.slug
               let featuredimage = filteredPost.frontmatter.featuredimage
               console.log(featuredimage)
               featuredimage = featuredimage ? <Img fluid={featuredimage.childImageSharp.fluid} fadeIn="false" alt={filteredPost.frontmatter.featuredimage_alt}/> : ""
-
+            
               return (
                 <Link to={filteredPost.fields.slug} itemProp="url" key={filteredPost.fields.slug} className="work-post article">
                   <article
