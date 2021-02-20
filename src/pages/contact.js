@@ -15,6 +15,7 @@ export default class Home extends Component {
         </div>
 
         <form className="grid-content" id="contact" name="contact" method="POST">
+        <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>Name <input tabindex="1" type="text" name="name" placeholder="Elon Musk"/></label>
         </p>
