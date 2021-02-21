@@ -20,7 +20,7 @@ const BlogPostTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <Link className="button" to = "/work/">« All Work</Link>
+      <Link className="button" to = "/work/">← All Work</Link>
       <article
         className="blog-post"
         itemScope
