@@ -1,5 +1,5 @@
 ---
-title: Smart Mirror Prototype
+title: Smart Mirror with Facial Recognition
 published: true
 category: Work
 post_type: Personal Project
@@ -8,7 +8,7 @@ description: Smart Mirror Prototype
 featuredimage: smart-mirrror.png
 featuredimage_alt: Smart Mirror Prototype
 timeline: 2 Months
-team: Just Me 💁🏻‍♂️
+team: Just me
 ---
 Smart mirrors have been a fascination for me for a long time – there’s plenty of super cool examples on the internet of touch mirrors, or voice controlled mirrors or TVs running in mirrors. This stuff got me really excited about the technology but in most cases the technology still felt forced. I set out to build my own smart mirror and rethink the user experience. I needed to build a smart mirror in order to fully understand how I’d want to use it.
 
