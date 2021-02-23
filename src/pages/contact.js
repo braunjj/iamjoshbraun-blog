@@ -3,6 +3,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 export default class Home extends Component {
+  
+  handleSubmit(){
+    alert("Thank you!");
+  }
 
   render() {
     return (
@@ -14,7 +18,7 @@ export default class Home extends Component {
           <p>Complete the form or reach out via email at <a href="mailto:josh@iamjoshbraun.com">josh@iamjoshbraun.com</a>.</p>
         </div>
 
-        <form className="grid-content" id="contact" name="contact" method="POST" action="/contact#success">
+        <form className="grid-content" id="contact" name="contact" method="POST">
         <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>Name <input tabindex="1" type="text" name="name" placeholder="Elon Musk"/></label>
@@ -25,7 +29,7 @@ export default class Home extends Component {
         <p>
           <label>Note <textarea tabindex="3" rows="4" name="note" placeholder="What's up?"/></label>
         </p>
-          <button id="send" tabindex="4" type="submit">Send</button>
+          <button id="send" tabindex="4" type="submit" onSubmit={this.handleSubmit}>Send</button>
       </form>
       </Layout>
       )
