@@ -18,18 +18,20 @@ export default class Home extends Component {
           <p>Complete the form or reach out via email at <a href="mailto:josh@iamjoshbraun.com">josh@iamjoshbraun.com</a>.</p>
         </div>
 
-        <form className="grid-content" id="contact" name="contact" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact" />
+        <form className="grid-content" id="contact" name="contact" method="POST" data-netlify="true" netlify-honeypot="last_name" action="/work">
         <p>
           <label>Name <input tabindex="1" type="text" name="name" placeholder="Elon Musk"/></label>
         </p>
         <p>
-          <label>Email <input tabindex="2" type="email" name="email" placeholder="elon@tesla.com"/></label>
+          <label>Email <input tabindex="2" type="email" name="email" placeholder="elon@spacex.com"/></label>
         </p>
         <p>
-          <label>Note <textarea tabindex="3" rows="4" name="note" placeholder="What's up?"/></label>
+          <label>Note <textarea tabindex="3" rows="4" name="note" minlength="5" placeholder="What's up?"/></label>
         </p>
-          <button id="send" tabindex="4" type="submit" onSubmit={this.handleSubmit}>Send</button>
+        <p class="hidden">
+          <label>Last Name<input tabindex="4" name="last_name" /></label>
+        </p>
+          <button id="send" tabindex="5" type="submit" onSubmit={this.handleSubmit}>Send</button>
       </form>
       </Layout>
       )

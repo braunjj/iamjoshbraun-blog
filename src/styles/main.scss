@@ -78,6 +78,12 @@ button:active {
   font-weight: 300;
 }
 
+form p.hidden {
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  height: 0;
+}
 
 input,
 textarea {
@@ -94,6 +100,12 @@ textarea {
   width: 100%;
   transition: all 0.3s ease;
   font-family: Poppins;
+}
+
+input:invalid,
+textarea:invalid {
+  border: 1px solid colors.$accent-red;
+  background-color: #FEF4F2;
 }
 
 input:hover,
