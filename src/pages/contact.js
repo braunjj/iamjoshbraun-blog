@@ -18,7 +18,7 @@ export default class Home extends Component {
           <p>Complete the form or reach out via email at <a href="mailto:josh@iamjoshbraun.com">josh@iamjoshbraun.com</a>.</p>
         </div>
 
-        <form className="grid-content" id="contact" name="contact" method="POST" data-netlify="true" netlify-honeypot="last_name" action="/work">
+        <form className="grid-content" id="contact" name="contact" method="POST" data-netlify="true" netlify-honeypot="last_name" action="/contact#submitted">
         <p>
           <label>Name <input tabindex="1" type="text" name="name" placeholder="Elon Musk"/></label>
         </p>
@@ -28,7 +28,7 @@ export default class Home extends Component {
         <p>
           <label>Note <textarea tabindex="3" rows="4" name="note" minlength="5" placeholder="What's up?"/></label>
         </p>
-        <p class="hidden">
+        <p>
           <label>Last Name<input tabindex="4" name="last_name" /></label>
         </p>
           <button id="send" tabindex="5" type="submit" onSubmit={this.handleSubmit}>Send</button>
