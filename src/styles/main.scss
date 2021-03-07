@@ -78,11 +78,24 @@ button:active {
   font-weight: 300;
 }
 
+.success_message {
+  color: #096ac6;
+  padding: 12px 24px;
+  margin: 12px 0;
+  background-color: #EBF5FF;
+  border-radius: 6px;
+  font-weight: 400;
+}
+
 form p.hidden {
   visibility: hidden;
   margin: 0;
   padding: 0;
   height: 0;
+
+  label {
+    margin: 0;
+  }
 }
 
 input,

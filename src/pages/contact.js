@@ -4,11 +4,10 @@ import SEO from "../components/seo"
 
 export default class Home extends Component {
   
-  handleSubmit(){
-    alert("Thank you!");
-  }
+
 
   render() {
+    const submitted = (this.props.location.hash === "#submitted") ? <p className="success_message">Thanks! I'll be in touch shortly.</p> : "";
     return (
       <Layout location="contact" title="Josh Braun">
       <SEO title="Contact" />
@@ -28,10 +27,11 @@ export default class Home extends Component {
         <p>
           <label>Note <textarea tabindex="3" rows="4" name="note" minlength="5" placeholder="What's up?"/></label>
         </p>
-        <p>
+        <p className="hidden">
           <label>Last Name<input tabindex="4" name="last_name" /></label>
         </p>
-          <button id="send" tabindex="5" type="submit" onSubmit={this.handleSubmit}>Send</button>
+        {submitted}
+          <button id="send" tabindex="5" type="submit">Send</button>
       </form>
       </Layout>
       )
