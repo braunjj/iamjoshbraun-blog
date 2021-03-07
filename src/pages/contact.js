@@ -18,6 +18,7 @@ export default class Home extends Component {
         </div>
 
         <form className="grid-content" id="contact" name="contact" method="POST" data-netlify="true" netlify-honeypot="last_name" action="/contact#submitted">
+        <input type="hidden" name="form-name" value="contact" />  {/* This is needed for Netlify forms*/}
         <p>
           <label>Name <input tabindex="1" type="text" name="name" placeholder="Elon Musk"/></label>
         </p>

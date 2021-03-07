@@ -79,10 +79,10 @@ button:active {
 }
 
 .success_message {
-  color: #096ac6;
+  color: colors.$accent-blue;
   padding: 12px 24px;
   margin: 12px 0;
-  background-color: #EBF5FF;
+  background-color: colors.$light-blue;
   border-radius: 6px;
   font-weight: 400;
 }
@@ -118,7 +118,7 @@ textarea {
 input:invalid,
 textarea:invalid {
   border: 1px solid colors.$accent-red;
-  background-color: #FEF4F2;
+  background-color: colors.$light-red;
 }
 
 input:hover,
