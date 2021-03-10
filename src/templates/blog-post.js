@@ -32,7 +32,7 @@ const BlogPostTemplate = ({ data, location }) => {
           <table className="project_meta">
           <thead>
             <tr>
-              <td><Unicons.UilCalendarAlt size="24" color="#333333"/>Timeframe:</td>
+              <td><Unicons.UilCalendarAlt size="24" color="#333333"/>Timeline:</td>
               <td><Unicons.UilUserCircle size="24" color="#333333"/>Team:</td>
             </tr>
           </thead>
