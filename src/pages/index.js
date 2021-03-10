@@ -38,11 +38,11 @@ export const Home = () => {
         <div className="grid-content homepage-hero">
           <h1>Hello, I’m Josh – a product designer & developer located in NYC.</h1>
           <p>
-            I’m currently designing machine learning business process automation
+            I’m currently designing machine learning document processing
             tools at <a target="blank" href="https://www.hyperscience.com">Hyperscience</a>.
           </p>
           <p>
-              Previously I also led the design of a point-of-sale iOS app for a Fortune 500, and I designed digital experiences for brands like Lowe’s and Lincoln Financial Group at <a target="blank" href="https://www.gmrmarketing.com">GMR</a>.
+              Previously I led the design of a point-of-sale iOS app for a Fortune 500, and I designed digital experiences for brands like Lowe’s and Lincoln Financial Group at <a target="blank" href="https://www.gmrmarketing.com">GMR</a>.
 
           </p>
           <p>I love working with early stage startups and new technologies.</p>
