@@ -1,8 +1,9 @@
 ---
 title: This is a test blog post
-published: true
+published: false
+featured: false
 category: Blog
-post_type: Personal Project
+post_type: TagOne
 date: 2021-01-24T17:30:22.729Z
 description: How our team helped customers improve transcription automation with
   a new layout editing experience in Hyperscience.

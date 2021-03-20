@@ -1,6 +1,7 @@
 ---
 title: Virtual Linc™ Microsite and Visual Identity
 published: true
+featured: false
 category: Work
 post_type: Visual Design
 date: 2019-02-20T14:01:02.533Z

@@ -208,6 +208,7 @@ textarea:focus {
 
 .work-post.article:last-child{
   border-bottom: none;
+  padding-bottom: 0;
 }
 
 .work-post.article:hover, .work-post.article:focus {
@@ -254,7 +255,7 @@ textarea:focus {
 @media all and (max-width: 540px) {
   .work-post.article{
       .thumbnail .gatsby-image-wrapper{
-        height: 130px;
+        height: 180px;
       }
     }
 }

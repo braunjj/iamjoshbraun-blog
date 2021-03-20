@@ -5,7 +5,6 @@ import { Link } from "gatsby"
 const PostThumbnail = (props) => {
   console.log(props)
   const post = (props.post_data ? props.post_data : "There's no data")
-  console.log(post);
   return (
   <Link to={post.fields.slug} itemProp="url" key={post.fields.slug} className="work-post article">
     <article

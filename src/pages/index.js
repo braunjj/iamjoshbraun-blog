@@ -74,7 +74,7 @@ export const Home = ({ data, location }) => {
               post_data={blogPostData} 
               section_title="Blog" 
               section_description="The latest post from my blog"
-              section_title_link="/blog/"
+              section_title_link=""
               section_title_link_text="View all posts"
               show_post_date="true"
               show_post_category="true"
@@ -95,7 +95,7 @@ export const Home = ({ data, location }) => {
         }
       }
     }
-    featured: allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {frontmatter: {published: {eq: true}, category: {eq: "Work"}}}, limit: 2) {
+    featured: allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {frontmatter: {published: {eq: true}, category: {eq: "Work"}, featured: {eq: true}}}, limit: 2) {
       nodes {
         excerpt
         fields {

@@ -17,7 +17,7 @@ const PostCollection = (props) => {
           <Link to={props.section_title_link}> {props.section_title_link? props.section_title_link_text : ""}</Link>
         </div>
         <div className="grid-content">
-          {(post_count === 0 ? <p className="empty_collection small">This collection has no posts</p> : "")}
+          {(post_count === 0 ? <p className="empty_collection small">This collection has no posts yet</p> : "")}
           
           {posts.map(filteredPost => {
               let featuredimage = filteredPost.frontmatter.featuredimage
