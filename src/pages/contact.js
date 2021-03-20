@@ -20,10 +20,10 @@ export default class Home extends Component {
         <form className="grid-content" id="contact" name="contact" method="POST" data-netlify="true" netlify-honeypot="last_name" action="/contact#submitted">
         <input type="hidden" name="form-name" value="contact" />  {/* This is needed for Netlify forms*/}
         <p>
-          <label>Name <input tabindex="1" type="text" name="name" placeholder="Your name"/></label>
+          <label>Name <input tabindex="1" type="text" name="name" placeholder="Josh Braun"/></label>
         </p>
         <p>
-          <label>Email <input tabindex="2" type="email" name="email" placeholder="yourname@gamil.com"/></label>
+          <label>Email <input tabindex="2" type="email" name="email" placeholder="josh@iamjoshbraun.com"/></label>
         </p>
         <p>
           <label>Message <textarea tabindex="3" rows="4" name="note" minlength="5" placeholder="What's up?"/></label>
