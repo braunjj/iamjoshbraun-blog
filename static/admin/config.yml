@@ -20,6 +20,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Published', name: 'published', widget: 'boolean', default: false, required: true}
+      - { label: 'Featured', name: 'featured', widget: 'boolean', default: false, required: true}
       - { label: "Category", name: "category", widget: "hidden", default: "Work"}
       - { label: "Post Type", name: "post_type", widget: "select", options: ["Case Study", "Visual Design", "Personal Project"]}
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
@@ -42,8 +43,9 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Published', name: 'published', widget: 'boolean', default: false, required: true}
+      - { label: 'Featured', name: 'featured', widget: 'boolean', default: false, required: true}
       - { label: "Category", name: "category", widget: "hidden", default: "Blog"}
-      - { label: "Post Type", name: "post_type", widget: "hidden", default: "Blog"}
+      - { label: "Tag", name: "post_type", widget: 'string'}
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Thumbnail', name: 'featuredimage', widget: 'image', allow_multiple: false, required: false }

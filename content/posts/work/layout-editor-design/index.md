@@ -1,11 +1,11 @@
 ---
 title: Layout Editor Redesign
 published: true
+featured: true
 category: Work
 post_type: Case Study
 date: 2021-01-24T17:01:34.454Z
-description: How our team helped enterprise customers improve transcription
-  automation with a new layout editing experience in Hyperscience.
+description: How my team helped enterprise customers automatically transcribe documents with a new layout editing experience in Hyperscience.
 featuredimage: layout_editor_thumb.png
 featuredimage_alt: Hyperscience Logo
 timeline: 4 Months
@@ -44,9 +44,9 @@ We identified the following pain pain points:
 * Users often returned to the layout editor to modify field configurations while optimizing a layout. For example, they may adjust the format of a date field or mark a certain field as Required. Unfortunately, there was no easy way to search for specific fields by name or type. Users had to hunt for the specific field they wanted on each page of the layout.
 * Additionally, we found that users tend to make the same changes over and over again when optimizing layouts – if they were changing the data format for one field, they usually needed to change it for all similar fields.
 
-![Original Layout Editor](old_layout_editor.png "Original Layout Editor")
+![Original Layout Editor](old_layout_editor1.png "Original Layout Editor")
 
-![The New Layout Editor Design](new_layout_editor.png "The New Layout Editor Design")
+![The New Layout Editor Design](new_layout_editor1.png "The New Layout Editor Design")
 
 ## Our solution
 

@@ -10,8 +10,8 @@
 }
 
 .app section {
-  margin-bottom: 48px;
-  padding-bottom: 12px;
+  margin-bottom: 56px;
+  padding-bottom: 56px;
   border-bottom: 1px solid colors.$light-gray;
 }
 
@@ -22,7 +22,7 @@
 
 
 .app .grid-title{
-  width: 320px;
+  width: 400px;
   margin-right: 48px;
   margin-bottom: 24px;
 
@@ -30,6 +30,10 @@
     max-width: 100%;
     border-radius: 12px;
     overflow:hidden;
+  }
+
+  .icon{
+    font-size: 48px
   }
 }
 
@@ -65,10 +69,6 @@
   }
 }
 
-.app .grid-title.extended{
-  width: 400px;
-}
-
 .app .grid-content{
   width: 100%;
 }
@@ -77,6 +77,10 @@
   margin-top: 100px;
 }
 
+.grid-content p.empty_collection {
+  text-align: center;
+  color: colors.$med_light-gray;
+}
 
 @media all and (max-width: 740px) {
   .app {

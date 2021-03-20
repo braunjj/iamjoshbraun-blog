@@ -1,6 +1,7 @@
 ---
 title: Fourpost Design System
 published: true
+featured: false
 category: Work
 post_type: Visual Design
 date: 2021-02-01T05:17:36.340Z
