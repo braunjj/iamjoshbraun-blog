@@ -32,7 +32,7 @@ export default class Home extends Component {
           <label>Last Name<input tabindex="4" name="last_name" /></label>
         </p>
         {submitted}
-          <button id="send" tabindex="5" type="submit">Send</button>
+          <button id="send" tabindex="5" type="submit">Send →</button>
       </form>
       </Layout>
       )
