@@ -58,7 +58,6 @@ export const Home = ({ data, location }) => {
             </div>
           </section>
           
-          <section>
             <PostCollection
               post_data={featuredPostData} 
               section_title="Featured Projects" 
@@ -68,18 +67,15 @@ export const Home = ({ data, location }) => {
               show_post_date="false"
               show_post_category="true"
             />
-          </section>
-          <section>
-          <PostCollection
-              post_data={blogPostData} 
-              section_title="Blog" 
-              section_description="The latest post from my blog"
-              section_title_link=""
-              section_title_link_text="View all posts"
-              show_post_date="true"
-              show_post_category="true"
-            />
-          </section>
+            <PostCollection
+                post_data={blogPostData} 
+                section_title="Blog" 
+                section_description="The latest post from my blog"
+                section_title_link=""
+                section_title_link_text="View all posts"
+                show_post_date="true"
+                show_post_category="true"
+              />
       </Layout>
       )
   }
