@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import Image from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
 import PostCollection from "../components/post-collection"
 
@@ -37,7 +36,7 @@ export const Home = ({ data, location }) => {
 
           </p>
           <p>I love working with early stage startups and new technologies.</p>
-            <Link to="/contact/" title="contact" class="button">Contact Me →</Link>
+            <Link to="/contact/" title="contact" class="button">👋 Say Hello </Link>
           </div>
           </section>
           <section class="flex">
