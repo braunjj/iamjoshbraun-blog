@@ -41,4 +41,26 @@
   .header#main {
     padding: 0 24px;
   }
+
+}
+
+@media all and (max-width: 500px) {
+  .header#main {
+    padding: 0 24px;
+    display: block;
+    height: auto;
+  }
+
+  .header #logo {
+    display: block;
+    margin: 12px 0;
+  }
+
+  .header nav{
+    margin-bottom: 12px;
+  }
+
+  .header nav a:first-child{
+    padding-left: 0 !important;
+  }
 }
