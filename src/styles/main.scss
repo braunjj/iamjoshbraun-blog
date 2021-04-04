@@ -238,6 +238,20 @@ textarea:focus {
   p.small{
     margin: 0;
   }
+
+  img{margin: 0 !important;}
+}
+
+.breadcrumb {
+  margin-bottom: 24px;
+  p{
+    color: colors.$med_light-gray !important;
+
+  }
+  p,a {
+    margin: 0 12px 0 0;
+
+  }
 }
 
 @media all and (max-width: 800px) {

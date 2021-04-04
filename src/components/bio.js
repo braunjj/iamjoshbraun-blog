@@ -57,7 +57,7 @@ const Bio = () => {
         <p className="small">Written by {author.name}. {` `}
         {author?.summary || null}{` `}
         <br/>
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
+          <a target="_blank"href={`https://twitter.com/${social?.twitter || ``}`}>
             Follow me on Twitter
           </a>
         </p>

@@ -13,8 +13,8 @@ export default class Home extends Component {
       <SEO title="Contact" />
 
         <div className="grid-title">
-          <h1>What's up? 👋</h1>
-          <p>Complete the form or send an email to <a href="mailto:josh@iamjoshbraun.com">josh@iamjoshbraun.com</a>.</p>
+          <h1>What's up?</h1>
+          <p className="small">Complete the form or send an email to <a href="mailto:josh@iamjoshbraun.com">josh@iamjoshbraun.com</a>.</p>
         </div>
 
         <form className="grid-content" id="contact" name="contact" method="POST" data-netlify="true" netlify-honeypot="last_name" action="/contact#submitted">

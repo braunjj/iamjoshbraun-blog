@@ -26,7 +26,7 @@ const PostThumbnail = (props) => {
           />
           <div className="meta">
             { (props.collection_settings.show_post_date === "true") ? <p className="xsmall date">{post.frontmatter.date}</p> : ""}
-            { (props.collection_settings.show_post_category === "true") ? <p className="xsmall category">#{post.frontmatter.post_type.replace(/ /g, '')}</p> : ""}
+            { (props.collection_settings.show_post_category === "true") ? <p className="xsmall category">#{post?.frontmatter?.post_type?.replace(/ /g, '')}</p> : ""}
           </div>
         </div>
       </div>

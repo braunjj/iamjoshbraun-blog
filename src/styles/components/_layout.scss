@@ -37,6 +37,10 @@
   }
 }
 
+.grid-title.short h1, .grid-title.short p, .grid-title.short a {
+    max-width: 200px;
+}
+
 .post{
   max-width: 720px;
   display: block;
@@ -66,6 +70,10 @@
       svg {margin-right: 8px;}
     }
 
+  }
+
+  .gatsby-resp-image-wrapper, img{
+    margin: 24px 0;
   }
 }
 
@@ -98,4 +106,8 @@
       max-width: 200px;
     }
   }
+
+  .grid-title.short h1, .grid-title.short p, .grid-title.short a {
+    max-width: none;
+}
 }
