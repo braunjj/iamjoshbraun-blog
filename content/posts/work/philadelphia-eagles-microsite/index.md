@@ -35,4 +35,4 @@ This miniseries followed four Eagles players at critical points in their career,
 
 ##Financial Playbook
 This financial educational series played out as weekly animated shorts on our social media accounts. I designed each of the animations.
-![Financial Playbook](image4.gif "Financial Playbook")
+  <img class="flexible" src="image4.gif" alt="Financial Playbook"/>
