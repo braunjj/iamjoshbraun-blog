@@ -16,7 +16,6 @@ const Layout = ({ location, title, specialClass, children }) => {
       <header className="global-header">{header}</header>
       <main className={`app ${specialClass}`}>{children}</main>
       <Footer/>
-
     </div>
   )
 }

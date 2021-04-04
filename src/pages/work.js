@@ -20,7 +20,7 @@ const WorkIndex = ({ data, location }) => {
       <PostCollection
         post_data={caseStudyData} 
         section_title="Case Studies" 
-        section_description="End-to-end product design"
+        section_description="End-to-end product and UX design"
         section_title_link=""
         section_title_link_text=""
         show_post_date="false"

@@ -23,7 +23,7 @@
 .header#main nav a {
   color: colors.$med-gray;
   font-weight: normal;
-  padding: 0 8px;
+  padding: 0 12px;
   text-decoration: none;
   font-size: 18px;
 }
@@ -40,5 +40,25 @@
 @media all and (max-width: 986px) {
   .header#main {
     padding: 0 24px;
+  }
+
+}
+
+@media all and (max-width: 500px) {
+  .header#main {
+    padding: 0 24px;
+    display: block;
+    height: auto;
+  }
+
+  .header #logo {
+    display: block;
+    text-align: center;
+    margin: 12px 0;
+  }
+
+  .header nav{
+    text-align: center;
+    margin-bottom:12px;
   }
 }

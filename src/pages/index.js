@@ -63,16 +63,16 @@ export const Home = ({ data, location }) => {
               section_title="Featured Projects" 
               section_description="Some of my favorite projects"
               section_title_link="/work/"
-              section_title_link_text="View all work"
+              section_title_link_text="View all Projects"
               show_post_date="false"
               show_post_category="true"
             />
             <PostCollection
                 post_data={blogPostData} 
                 section_title="Blog" 
-                section_description="The latest post from my blog"
-                section_title_link=""
-                section_title_link_text="View all posts"
+                section_description="The latest from my blog"
+                section_title_link="/blog/"
+                section_title_link_text="View all Posts"
                 show_post_date="true"
                 show_post_category="true"
               />

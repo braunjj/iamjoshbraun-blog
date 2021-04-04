@@ -1,12 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Img from "gatsby-image"
-import * as Unicons from '@iconscout/react-unicons';
-
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import PostMetaData from "../components/post-meta-data"
+
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -14,13 +13,21 @@ const BlogPostTemplate = ({ data, location }) => {
   const { previous, next } = data
   let featuredimage = post.frontmatter.featuredimage
 
+  let slug = post.fields.slug.split('/')[2];
+  slug = slug.toLowerCase()
+    .split('-')
+    .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+    .join(' ');
+
   return (
     <Layout location={location} title={siteTitle} specialClass="post">
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <Link className="button" to = "/work/">← All Work</Link>
+      <div className="breadcrumb flex">
+        <Link className="" to = "/">Home</Link> <p>/</p><Link className="" to = {"/" + post.frontmatter.category.toLowerCase() + "/"}>{post.frontmatter.category}</Link><p>/</p><p>{slug}</p> 
+      </div>
       <article
         className="blog-post"
         itemScope
@@ -29,18 +36,8 @@ const BlogPostTemplate = ({ data, location }) => {
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p itemProp="description">{post.frontmatter.description}</p>
-          <table className="project_meta">
-          <thead>
-            <tr>
-              <td><Unicons.UilCalendarAlt size="24" color="#333333"/>Timeline:</td>
-              <td><Unicons.UilUserCircle size="24" color="#333333"/>Team:</td>
-            </tr>
-          </thead>
-          <tr>
-            <td>{post.frontmatter?.timeline}</td>
-            <td>{post.frontmatter?.team}</td>
-          </tr>
-          </table>
+          {post.frontmatter.category === "Work" ? <PostMetaData timeline={post.frontmatter?.timeline} team={post.frontmatter?.team}/> : ""}
+        
         </header>
         <div
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -49,6 +46,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <div>
           <Bio />
         </div>
+        <a className="button" href="#main">Scroll to Top</a>
       </article>
     </Layout>
   )
@@ -76,6 +74,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         post_type
+        category
         timeline
         team
         featuredimage {
@@ -87,6 +86,9 @@ export const pageQuery = graphql`
           }
         }
         featuredimage_alt
+      }
+      fields {
+        slug
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

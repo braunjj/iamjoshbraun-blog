@@ -11,10 +11,10 @@ const PostCollection = (props) => {
 
   return (
     <section class="flex">
-        <div className="grid-title">
+        <div className="grid-title short">
           <h1>{props.section_title}</h1>
-          <p>{props.section_description}</p>
-          <Link to={props.section_title_link}> {props.section_title_link? props.section_title_link_text : ""}</Link>
+          <p className="small">{props.section_description}</p>
+          {props.section_title_link ? <Link className="button" to={props.section_title_link}> {props.section_title_link_text}</Link> : ""}
         </div>
         <div className="grid-content">
           {(post_count === 0 ? <p className="empty_collection small">This collection has no posts yet</p> : "")}

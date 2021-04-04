@@ -15,6 +15,7 @@ export default class Navigation extends Component {
           <nav>
             <Link to="/" id="home" title="Home" activeClassName="active">Home</Link>
             <Link to="/work/" id="work" title="Work" activeClassName="active">Work</Link>
+            <Link to="/blog/" id="blog" title="Blog" activeClassName="active">Blog</Link>
             <Link to="/contact/" id="contact" title="Contact" activeClassName="active">Contact</Link>
           </nav>
       </div>
