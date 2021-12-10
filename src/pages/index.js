@@ -28,11 +28,10 @@ export const Home = ({ data, location }) => {
         <div className="grid-content homepage-hero">
           <h1>Hello, I’m Josh – a product designer & developer located in NYC.</h1>
           <p>
-            I’m currently designing machine learning document processing
-            tools at <a target="blank" href="https://www.hyperscience.com">Hyperscience</a>.
+          I’m currently a design lead at <a target="blank" href="https://www.elementl.com">Elementl</a>, building an open source data orchestration platform called Dagster.
           </p>
           <p>
-              Previously I led the design of a point-of-sale iOS app for a Fortune 500, and I designed digital experiences for brands like Lowe’s and Lincoln Financial Group at <a target="blank" href="https://www.gmrmarketing.com">GMR</a>.
+          I previously helped build machine learning and automation tools at <a target="blank" href="https://www.hyperscience.com">Hyperscience</a> and designed digital experiences for brands like Lowe’s and Lincoln Financial Group at <a target="blank" href="https://www.gmrmarketing.com">GMR</a>.
 
           </p>
           <p>I love working with early stage startups and new technologies.</p>
